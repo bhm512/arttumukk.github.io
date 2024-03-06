@@ -1,24 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"> <!--määritetään dokumentin merkistökoodaus-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title> <!--Verkkosivun nimi-->
+  <style>
+    body {
+      font-family: Arial, sans-serif; /*Fontin nimi*/
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #134c83; /*Ylemmän sinisen palkin väri ja koko*/
+      color: #fff; /*Otsikon väri ja sijoitus alempana*/
+      text-align: center;
+      padding: 20px 0;
+    }
+    h1 {
+      margin: 0;
+    }
+    nav {
+      background-color: #141562; /*Alemman sinisen palkin väri ja koko*/
+      color: #fff; /*Valikon tekstin väri*/
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav ul {
+      list-style-type: none; /*Navigointipalkki ja luettelo sen kohteista*/
+      padding: 0;
+    }
+    nav ul li {
+      display: inline; /*Navigointi palkin eri kohdat*/
+      margin: 0 10px;
+    }
+    nav ul li a {
+      color: #fff; /*Navigointipalkin tekstin väri*/
+      text-decoration: none;
+    }
+    section {
+      padding: 20px; /*Elementin koko*/
+    }
+   
+    
+  
+  </style>
 </head>
 <body>
-<h1>Arttu Mukkula</h1>  
- 
-<div>Olen 22-vuotias mies Espoosta, joka tykkää urheilla.
-<pre>0445353317 sposti: arttu.mukkula@gmail.com</pre>    
-    
-<hr>
-<h2>Kuka olen?</h2>
-<p>Hei! Olen siis Arttu ja asun Espoossa, mutta olen syntynyt Lahdessa. Nuoruus vietetty myös Espoossa vahvasti urheilun parissa toimien. Pääsääntöisesti nautin uusista haasteista ja monipuolisista mahdollisuuksista. 
- Olen intohimoinen oppija, joka arvostaa jatkuvaa kehitystä niin henkilökohtaisella kuin ammatillisellakin tasolla. Minulla on vahva halu saavuttaa tavoitteita ja vaikuttaa positiivisesti ympärilläni oleviin ihmisiin ja yhteisöihin.
- Olen tottunut työskentelemään tiimissä ja kommunikoimaan tehokkaasti erilaisten sidosryhmien kanssa. 
-Omaan hyvät ongelmanratkaisu- ja päätöksentekotaidot, jotka ovat auttaneet minua menestymään vaihtelevissa tilanteissa</p>
+
+  <header> <!--Otsikko-->
+    <h1>Arttu Mukkula</h1>
+  </header>
+
+  <nav> <!--Linkit navigointipalkissa-->
+    <ul>
+      <li><a href="index.html">Kuka olen?</a></li>
+      <li><a href="koulutus.html">Koulutus ja työt</a></li>
+      <li><a href="Mielenkiinto.html">Mielenkiinnonkohteet ja suosittelijat</a></li>
+    </ul>
+  </nav>
+
+  <section id="about"> <!--Ensinmäinen teksti, missä kerron enemmän itsetsäni.-->
+    <h2>Kuka olen?</h2> <!--Toinen otsikko-->
+    <p>Olen Arttu ja asun Espoossa, mutta olen syntynyt Lahdessa. Nuoruus vietetty myös Espoossa vahvasti urheilun parissa toimien.<br> <!--Teksti ja siinä käytetyt välit-->
+        Pääsääntöisesti nautin uusista haasteista ja monipuolisista mahdollisuuksista. Olen intohimoinen oppija, joka arvostaa jatkuvaa kehitystä<br> niin henkilökohtaisella kuin ammatillisellakin tasolla. 
+        Minulla on vahva halu saavuttaa tavoitteita ja vaikuttaa positiivisesti ympärilläni<br> oleviin ihmisiin ja yhteisöihin. Olen tottunut työskentelemään tiimissä ja kommunikoimaan tehokkaasti erilaisten sidosryhmien kanssa. 
+       <br> Omaan hyvät ongelmanratkaisu- ja päätöksentekotaidot, jotka ovat auttaneet minua menestymään vaihtelevissa tilanteissa.</p> <!--kappaleen tekstiä-->
+  </section>
 
 
+  <section id="Yhteystiedot"> <!--Yhteystietojen kohdan paikka-->
+    <h2>Yhteystiedot</h2> <!--Otsikko-->
+    <p>Lähetä minulle sähköpostia alta löytyvään osoitteeseen!</p> <!--kappaleen tekstiä-->
+    <p><a href=mailto:arttu.mukkula@gmail.com">arttu.mukkula@gmail.com<a/></p> <!--linkki jolla voi lähettää suoraan sähköpostia-->
+    <p>Tai soittamalla minut saa kiinni tästä numerosta</p> <!--tekstiä-->
+    <p>044 123 456</p> <!--puhelinnumero-->
+  </section>
 
-</div> 
 </body>
-</html> 
+</html>
