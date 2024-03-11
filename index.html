@@ -2,7 +2,7 @@
 <html lang="en"> <!--kieli dokumentissa, tässä englanti-->
 <head> <!--tällä elementillä annetaan tietoa selaimelle sivun toiminnasta ja linkitetään css tiedosto osaksi sivua-->
   <meta charset="UTF-8"> <!--määritetään dokumentin merkistökoodaus-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--näytön skaalaus ja sivu näkyy alkuperäisessä mittasuhteessa-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--näytön skaalaus ja sivu näkyy alkuperäisessä mittasuhteessa ja skaalautuu muiden näyttökokojen mukaan responsiivisesti-->
   <title>Portfolio</title> <!--Verkkosivun nimi-->
   <style> /*tyylitiedosto alkaa*/
     body {
@@ -22,26 +22,25 @@
     nav {
       background-color: #141562; /*Alemman sinisen palkin väri ja koko*/
       color: #fff; /*Valikon tekstin väri*/
-      text-align: center;
-      padding: 10px 0;
+      text-align: center; /*teksti keskellä*/
+      padding: 10px 0; /*sisäpeitto 0 navigaatiopalkissa.*/
     }
     nav ul {
-      list-style-type: none; /*Navigointipalkki ja luettelo sen kohteista*/
+      list-style-type: none; /*Navigointipalkki ja luettelo sen kohteista, "none" meinaa että ei järjestyksessä*/
       padding: 0;
     }
     nav ul li {
-      display: inline; /*Navigointi palkin eri kohdat*/
-      margin: 0 10px;
+      display: inline; /*Navigointi palkin eri kohdat määritetty näkyviin vaaka suunnassa ja rinnakkain*/
+      margin: 0 10px; /* antaa hieman tilaa listakohtein väliin, niiden ollessa selvempiä*/
     }
     nav ul li a {
       color: #fff; /*Navigointipalkin tekstin väri*/
-      text-decoration: none;
+      text-decoration: none; /*poistaa linkkien alta viivan*/
     }
     section {
       padding: 20px; /*Elementin koko*/
     }
    
-    
   
   </style> <!--tyylitiedosto päättyy-->
 </head> <!--sijoitetaan metatietoa -->
@@ -51,8 +50,8 @@
     <h1>Arttu Mukkula</h1>
   </header>
 
-  <nav> <!--Linkit navigointipalkissa-->
-    <ul>
+  <nav> <!--Linkit navigointipalkissa, jokainen ohjaa käyttäjän eri sivulle-->
+    <ul> <!--lista joka ei ole järjestyksessä, listan kohdat alla-->
       <li><a href="index.html">Kuka olen?</a></li>
       <li><a href="koulutus.html">Koulutus ja työt</a></li>
       <li><a href="Mielenkiinto.html">Mielenkiinnonkohteet ja suosittelijat</a></li>
@@ -76,5 +75,5 @@
     <p>044 123 456</p> <!--puhelinnumero-->
   </section>
 
-</body>
-</html>
+</body> <!--tekstirunko päättyy-->
+</html> <!--tiedoston lopettava tägi-->
